@@ -1,6 +1,6 @@
 {
-  "name": "@clerk/clerk-expo",
-  "version": "2.19.9",
+  "name": "@clerk/expo",
+  "version": "2.19.10",
   "description": "Clerk React Native/Expo library",
   "keywords": [
     "react",
@@ -56,6 +56,10 @@
       "types": "./dist/experimental.d.ts",
       "default": "./dist/experimental.js"
     },
+    "./legacy": {
+      "types": "./dist/legacy.d.ts",
+      "default": "./dist/legacy.js"
+    },
     "./google-one-tap": {
       "types": "./dist/google-one-tap/index.d.ts",
       "default": "./dist/google-one-tap/index.js"
@@ -94,9 +98,8 @@
   },
   "dependencies": {
     "@clerk/clerk-js": "workspace:^",
-    "@clerk/clerk-react": "workspace:^",
+    "@clerk/react": "workspace:^",
     "@clerk/shared": "workspace:^",
-    "@clerk/types": "workspace:^",
     "base-64": "^1.0.0",
     "react-native-url-polyfill": "2.0.0",
     "tslib": "catalog:repo"
@@ -116,6 +119,7 @@
   },
   "peerDependencies": {
     "@clerk/expo-passkeys": ">=0.0.6",
+    "expo": ">=53 <55",
     "expo-apple-authentication": ">=7.0.0",
     "expo-auth-session": ">=5",
     "expo-constants": ">=12",
@@ -149,7 +153,7 @@
     }
   },
   "engines": {
-    "node": ">=18.17.0"
+    "node": ">=20.9.0"
   },
   "publishConfig": {
     "access": "public"
