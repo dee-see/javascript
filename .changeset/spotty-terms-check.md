@@ -4,4 +4,4 @@
 '@clerk/shared': minor
 ---
 
-Introduce `reset-password` session task
+Add a subtitle on the Reset password session task screen

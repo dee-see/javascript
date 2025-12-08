@@ -703,8 +703,14 @@ export const jaJP: LocalizationResource = {
       subtitle: 'アカウントに関連付けられたパスワードを入力してください',
       title: 'パスワードを入力',
     },
+    passwordCompromised: {
+      title: undefined,
+    },
     passwordPwned: {
       title: 'パスワードが漏えいしました',
+    },
+    passwordUntrusted: {
+      title: undefined,
     },
     phoneCode: {
       formTitle: '検証コード',
@@ -879,10 +885,14 @@ export const jaJP: LocalizationResource = {
       actionLink: undefined,
       actionText: undefined,
     },
+    subtitle: undefined,
     title: undefined,
   },
   unstable__errors: {
     already_a_member_in_organization: '{{email}} はすでにこの組織のメンバーです。',
+    avatar_file_size_exceeded: 'ファイルサイズが10MBの上限を超えています。より小さいファイルを選択してください。',
+    avatar_file_type_invalid:
+      'サポートされていないファイル形式です。JPG、PNG、GIF、またはWEBP画像をアップロードしてください。',
     captcha_invalid: undefined,
     captcha_unavailable:
       'ボット検証に失敗したため、サインアップに失敗しました。ページを更新して再試行するか、サポートに連絡してさらに支援を受けてください。',
@@ -891,6 +901,7 @@ export const jaJP: LocalizationResource = {
     form_identifier_exists__phone_number: undefined,
     form_identifier_exists__username: undefined,
     form_identifier_not_found: undefined,
+    form_new_password_matches_current: undefined,
     form_param_format_invalid: undefined,
     form_param_format_invalid__email_address: undefined,
     form_param_format_invalid__phone_number: undefined,
@@ -910,6 +921,7 @@ export const jaJP: LocalizationResource = {
     form_password_pwned__sign_in:
       'このパスワードは侵害の一部として見つかったため使用できません。パスワードをリセットしてください。',
     form_password_size_in_bytes_exceeded: undefined,
+    form_password_untrusted__sign_in: undefined,
     form_password_validation_failed: undefined,
     form_username_invalid_character: undefined,
     form_username_invalid_length: 'ユーザー名は{{min_length}}文字以上{{max_length}}文字以下である必要があります。',

@@ -685,8 +685,14 @@ export const kkKZ: LocalizationResource = {
       subtitle: 'Есептік жазбаңыздың құпия сөзін енгізіңіз',
       title: 'Құпия сөзді енгізіңіз',
     },
+    passwordCompromised: {
+      title: undefined,
+    },
     passwordPwned: {
       title: 'Құпия сөз қауіпті',
+    },
+    passwordUntrusted: {
+      title: undefined,
     },
     phoneCode: {
       formTitle: 'Растау коды',
@@ -859,10 +865,13 @@ export const kkKZ: LocalizationResource = {
       actionLink: undefined,
       actionText: undefined,
     },
+    subtitle: undefined,
     title: undefined,
   },
   unstable__errors: {
     already_a_member_in_organization: '{{email}} ұйымға қазірдің өзінде қосылған.',
+    avatar_file_size_exceeded: 'Файл өлшемі 10 МБ шегінен асып кетті. Кішірек файлды таңдаңыз.',
+    avatar_file_type_invalid: 'Файл түрі қолдау көрсетілмейді. JPG, PNG, GIF немесе WEBP суретін жүктеңіз.',
     captcha_invalid: 'Қауіпсіздік тексерілуі сәтсіз аяқталды. Браузерді өзгерту немесе кеңейтулерді өшіруге тырысыңыз.',
     captcha_unavailable: 'Бот тексерілуі сәтсіз аяқталды. Бетті жаңартып немесе қолдау қызметіне хабарласыңыз.',
     form_code_incorrect: undefined,
@@ -870,6 +879,7 @@ export const kkKZ: LocalizationResource = {
     form_identifier_exists__phone_number: 'Бұл телефон нөмірі тіркелген. Басқасын қолданыңыз.',
     form_identifier_exists__username: 'Бұл пайдаланушы аты тіркелген. Басқасын қолданыңыз.',
     form_identifier_not_found: 'Есептік жазба табылмады. Дұрыстығын тексеріңіз.',
+    form_new_password_matches_current: undefined,
     form_param_format_invalid: 'Енгізілген мән жарамсыз пішімде.',
     form_param_format_invalid__email_address: 'Электрондық пошта жарамсыз.',
     form_param_format_invalid__phone_number: 'Телефон нөмірі жарамсыз.',
@@ -888,6 +898,7 @@ export const kkKZ: LocalizationResource = {
     form_password_pwned__sign_in: 'Бұл құпия сөз қауіпсіз емес. Құпия сөзді өзгертуге болады.',
     form_password_size_in_bytes_exceeded:
       'Құпия сөзде тым көп байт бар. Оны қысқартыңыз немесе арнайы таңбаларды алып тастаңыз.',
+    form_password_untrusted__sign_in: undefined,
     form_password_validation_failed: 'Құпия сөз қате',
     form_username_invalid_character:
       'Пайдаланушы атында жарамсыз таңбалар бар. Тек әріптер, сандар және астыңғы сызықшаларды қолданыңыз.',
