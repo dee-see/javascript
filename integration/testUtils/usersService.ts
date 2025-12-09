@@ -75,7 +75,7 @@ export type FakeOrganization = {
 export type FakeAPIKey = {
   apiKey: APIKey;
   secret: string;
-  revoke: () => Promise<APIKey>;
+  revoke: (reason?: string | null) => Promise<APIKey>;
 };
 
 export type UserService = {
@@ -232,9 +232,9 @@ export const createUserService = (clerkClient: ClerkClient) => {
       return {
         apiKey,
         secret: apiKey.secret ?? '',
-        revoke: () =>
+        revoke: (reason?: string | null) =>
           withErrorLogging('revokeAPIKey', () =>
-            clerkClient.apiKeys.revoke({ apiKeyId: apiKey.id, revocationReason: 'For testing purposes' }),
+            clerkClient.apiKeys.revoke({ apiKeyId: apiKey.id, revocationReason: reason }),
           ),
       } satisfies FakeAPIKey;
     },
