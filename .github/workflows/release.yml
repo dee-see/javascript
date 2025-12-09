@@ -1,10 +1,10 @@
-name: Release
-run-name: Release
+name: Release (Core 2)
+run-name: Release (Core 2)
 
 on:
   push:
     branches:
-      - main
+      - release/core-2
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -47,13 +47,16 @@ jobs:
           # turbo-team: ${{ vars.TURBO_TEAM }}
           # turbo-token: ${{ secrets.TURBO_TOKEN }}
 
+      - name: Build release
+        run: pnpm turbo build $TURBO_ARGS --force
+
       - name: Create Release PR
         id: changesets
         uses: changesets/action@v1
         with:
-          commit: "ci(repo): Version packages (Core 3)"
-          title: "ci(repo): Version packages (Core 3)"
-          publish: pnpm turbo build $TURBO_ARGS --force && pnpm release
+          commit: "ci(repo): Version packages (Core 2)"
+          title: "ci(repo): Version packages (Core 2)"
+          publish: pnpm release
           # Workaround for https://github.com/changesets/changesets/issues/421
           version: pnpm version-packages
         env:

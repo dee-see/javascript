@@ -4,8 +4,6 @@ on:
   merge_group:
   pull_request:
     branches:
-      - main
-      - release/v4
       - release/core-2
 
 permissions:
@@ -87,7 +85,7 @@ jobs:
             echo 'Skipping';
             exit 0;
           else
-            pnpm changeset status --since=origin/main;
+            pnpm changeset status --since=origin/release/core-2;
           fi
 
   build-packages:
