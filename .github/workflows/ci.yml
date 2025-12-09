@@ -4,7 +4,7 @@ on:
   merge_group:
   pull_request:
     branches:
-      - release/core-2
+      - main
 
 permissions:
   contents: read
@@ -85,7 +85,7 @@ jobs:
             echo 'Skipping';
             exit 0;
           else
-            pnpm changeset status --since=origin/release/core-2;
+            pnpm changeset status --since=origin/main;
           fi
 
   build-packages:
