@@ -1,6 +1,7 @@
 name: Nightly upstream tests
 on:
-  issue_comment: [created]
+  issue_comment:
+    types: [created]
 
 jobs:
   integration-tests:
